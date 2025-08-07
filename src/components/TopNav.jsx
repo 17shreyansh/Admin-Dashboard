@@ -4,13 +4,14 @@ import {
   MenuUnfoldOutlined,
   MenuFoldOutlined,
   SettingOutlined,
-  BulbOutlined
+  BulbOutlined,
+  LogoutOutlined
 } from '@ant-design/icons'
 
 const { Header } = Layout
 const { Text } = Typography
 
-const TopNav = ({ collapsed, setCollapsed, darkMode, setDarkMode }) => {
+const TopNav = ({ collapsed, setCollapsed, darkMode, setDarkMode, onLogout }) => {
   return (
     <Header style={{
       padding: '0 24px',
@@ -52,6 +53,13 @@ const TopNav = ({ collapsed, setCollapsed, darkMode, setDarkMode }) => {
           type="text"
           icon={<SettingOutlined />}
           style={{ fontSize: '16px' }}
+        />
+        <Button
+          type="text"
+          icon={<LogoutOutlined />}
+          onClick={onLogout}
+          style={{ fontSize: '16px', color: '#f5222d' }}
+          title="Logout"
         />
       </Space>
     </Header>
