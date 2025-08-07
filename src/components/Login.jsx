@@ -3,7 +3,7 @@ import { Form, Input, Button, Card, Typography, message } from 'antd'
 import { UserOutlined, LockOutlined } from '@ant-design/icons'
 import { motion } from 'framer-motion'
 import AnimatedBackground from './AnimatedBackground'
-import logo from '../assets/logo.svg'
+import logo from '../assets/logo.png'
 
 const { Title, Text } = Typography
 
